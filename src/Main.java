@@ -47,22 +47,22 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int contribution = 15_000, month = 0;
-        double total = 0;
+        int month = 0;
+        double total = 15_000;
         while (total < 12_000_000) {
             month++;
-            total = (total + contribution) * 1.07;
+            total = total * 1.07;
             System.out.printf("Месяц " + month + ", сумма накоплений %.1f%n", total, " рублей");
         }
     }
 
     public static void task5() {
         System.out.println("Задача 5");
-        int contribution = 15_000, month = 0;
-        double total = 0;
+        int month = 0;
+        double total = 15_000;
         while (total < 12_000_000) {
             month++;
-            total = (total + contribution) * 1.07;
+            total = total * 1.07;
             if (month % 6 == 0) {
                 System.out.printf("Месяц " + month + ", сумма накоплений %.1f%n", total, " рублей");
             }
